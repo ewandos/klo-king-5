@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://ck8i3q8tq7fhu"]
+
+[ext_resource type="Script" uid="uid://bsrnps2aplbl5" path="res://items/item.gd" id="1_t0h28"]
+[ext_resource type="Texture2D" uid="uid://b10nh70uyrivb" path="res://bush.png" id="2_0oonf"]
+
+[resource]
+script = ExtResource("1_t0h28")
+name = "Bush"
+cost = 5
+income = 0.1
+texture = ExtResource("2_0oonf")
+metadata/_custom_type_script = "uid://bsrnps2aplbl5"

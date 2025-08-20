@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bybv8hmy1ebaw" path="res://item_store_container.tscn" id="2_fc0e3"]
 [ext_resource type="Resource" uid="uid://cw5gnhecvpdic" path="res://items/lamp_post.tres" id="3_7jktm"]
 [ext_resource type="Resource" uid="uid://dbkilee0sdtbg" path="res://items/dixi.tres" id="3_fc0e3"]
-[ext_resource type="Resource" uid="uid://ck8i3q8tq7fhu" path="res://items/pit.tres" id="3_ryrav"]
+[ext_resource type="Resource" uid="uid://ck8i3q8tq7fhu" path="res://items/bush.tres" id="3_ryrav"]
 
 [node name="Game" type="Control"]
 layout_mode = 3

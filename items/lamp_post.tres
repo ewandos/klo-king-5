@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://cw5gnhecvpdic"]
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://cw5gnhecvpdic"]
 
 [ext_resource type="Script" uid="uid://bsrnps2aplbl5" path="res://items/item.gd" id="1_bs1md"]
+[ext_resource type="Texture2D" uid="uid://d8y6wgorlmot" path="res://lamp_post.png" id="2_8jsqx"]
 
 [resource]
 script = ExtResource("1_bs1md")
 name = "Lamp Post"
 cost = 150
 income = 0.5
+texture = ExtResource("2_8jsqx")
 metadata/_custom_type_script = "uid://bsrnps2aplbl5"

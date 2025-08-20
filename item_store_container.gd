@@ -8,6 +8,7 @@ extends VBoxContainer
 func _ready() -> void:
 	dixi_purchase_button.item = item
 	dixi_purchase_button.purchased.connect(_on_purchased)
+	preview_texture.texture = item.texture
 	if not State.items.has(item): preview_texture.modulate.a = 0.33
 
 func _on_purchased() -> void:

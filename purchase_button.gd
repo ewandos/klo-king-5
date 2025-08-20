@@ -15,6 +15,7 @@ func _on_pressed() -> void:
 	if success: purchased.emit()
 	
 func _process(delta: float) -> void:
+	if Engine.is_editor_hint(): return
 	disabled = State.money < item.cost
 
 func _set_item(n_item) -> void:

@@ -1,10 +1,12 @@
-[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dbkilee0sdtbg"]
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://dbkilee0sdtbg"]
 
 [ext_resource type="Script" uid="uid://bsrnps2aplbl5" path="res://items/item.gd" id="1_7k651"]
+[ext_resource type="Texture2D" uid="uid://fah006tau0ki" path="res://dixi_open.png" id="2_mlod8"]
 
 [resource]
 script = ExtResource("1_7k651")
 name = "Dixi"
 cost = 899
-income = 2
+income = 0.0
+texture = ExtResource("2_mlod8")
 metadata/_custom_type_script = "uid://bsrnps2aplbl5"
