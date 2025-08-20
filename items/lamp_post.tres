@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://cw5gnhecvpdic"]
+
+[ext_resource type="Script" uid="uid://bsrnps2aplbl5" path="res://items/item.gd" id="1_bs1md"]
+
+[resource]
+script = ExtResource("1_bs1md")
+name = "Lamp Post"
+cost = 150
+income = 0.5
+metadata/_custom_type_script = "uid://bsrnps2aplbl5"

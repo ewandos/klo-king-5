@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bybv8hmy1ebaw"]
+
+[ext_resource type="Script" uid="uid://c701dg3sfyu04" path="res://item_store_container.gd" id="1_of07p"]
+[ext_resource type="Texture2D" uid="uid://fah006tau0ki" path="res://dixi_open.png" id="2_cu3v8"]
+[ext_resource type="Script" uid="uid://c63mao7db0a8f" path="res://purchase_button.gd" id="3_c8nsd"]
+[ext_resource type="Resource" uid="uid://dbkilee0sdtbg" path="res://items/dixi.tres" id="4_ipun7"]
+
+[node name="ItemStoreContainer" type="VBoxContainer"]
+script = ExtResource("1_of07p")
+
+[node name="PreviewTexture" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_cu3v8")
+
+[node name="DixiPurchaseButton" type="Button" parent="."]
+layout_mode = 2
+text = "Buy Dixi (899$)"
+script = ExtResource("3_c8nsd")
+item = ExtResource("4_ipun7")
+metadata/_custom_type_script = "uid://c63mao7db0a8f"

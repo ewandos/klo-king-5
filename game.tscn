@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=3 uid="uid://5kmyaytvyrft"]
+
+[ext_resource type="Script" uid="uid://b2x4jnvt6tgl8" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://bybv8hmy1ebaw" path="res://item_store_container.tscn" id="2_fc0e3"]
+[ext_resource type="Resource" uid="uid://cw5gnhecvpdic" path="res://items/lamp_post.tres" id="3_7jktm"]
+[ext_resource type="Resource" uid="uid://dbkilee0sdtbg" path="res://items/dixi.tres" id="3_fc0e3"]
+[ext_resource type="Resource" uid="uid://ck8i3q8tq7fhu" path="res://items/pit.tres" id="3_ryrav"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_80nbo")
+
+[node name="MessageDisplay" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -60.0
+offset_top = 14.0
+offset_right = 62.0
+offset_bottom = 37.0
+grow_horizontal = 2
+text = "Message Notice"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 26.0
+offset_right = 306.0
+offset_bottom = 126.0
+text = "Wealth"
+
+[node name="IncomeLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 122.0
+offset_right = 309.0
+offset_bottom = 222.0
+text = "Income"
+
+[node name="ShopButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 98.0
+offset_top = 2441.0
+offset_right = 1064.0
+offset_bottom = 2537.0
+text = "Shop"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -785.5
+offset_bottom = 785.5
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 2
+vertical_scroll_mode = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+theme_override_constants/separation = 100
+
+[node name="ItemStoreContainer" parent="ScrollContainer/HBoxContainer" instance=ExtResource("2_fc0e3")]
+layout_mode = 2
+item = ExtResource("3_ryrav")
+
+[node name="ItemStoreContainer3" parent="ScrollContainer/HBoxContainer" instance=ExtResource("2_fc0e3")]
+layout_mode = 2
+item = ExtResource("3_7jktm")
+
+[node name="ItemStoreContainer2" parent="ScrollContainer/HBoxContainer" instance=ExtResource("2_fc0e3")]
+layout_mode = 2
+item = ExtResource("3_fc0e3")
+
+[connection signal="pressed" from="ShopButton" to="." method="_on_shop_button_pressed"]

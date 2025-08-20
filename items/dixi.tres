@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://dbkilee0sdtbg"]
+
+[ext_resource type="Script" uid="uid://bsrnps2aplbl5" path="res://items/item.gd" id="1_7k651"]
+
+[resource]
+script = ExtResource("1_7k651")
+name = "Dixi"
+cost = 899
+income = 2
+metadata/_custom_type_script = "uid://bsrnps2aplbl5"
